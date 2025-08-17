@@ -1,0 +1,14 @@
+.ipynb_checkpoints/
+*.ipynb~*
+*.h5ad
+*.h5
+*.loom
+*.mtx
+*.mtx.gz
+*.npz
+*.npy
+scanpy_practice/**/cache/
+scanpy_practice/data/
+*.tar
+*.tar.gz
+*.zip
