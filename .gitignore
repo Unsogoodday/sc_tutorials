@@ -1,5 +1,4 @@
 .ipynb_checkpoints/
-*.ipynb~*
 *.h5ad
 *.h5
 *.loom
@@ -11,3 +10,14 @@
 *.tar.gz
 *.zip
 scanpy_practice/data/
+
+# Ignore most images
+*.png
+*.jpg
+*.pdf
+
+# Keep final figures
+!figures/**
+
+
+
