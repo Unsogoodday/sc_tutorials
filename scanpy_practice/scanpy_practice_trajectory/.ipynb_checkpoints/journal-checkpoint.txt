@@ -1,0 +1,40 @@
+scanpy tutorial에서 paul15 data를 이용한 clustering/annotation/paga trajectory까지 연습함
+중간에 pp를 이상하게 해서 plot이 이상하게 그려짐. 끝을 못보고 그냥 넘어감.
+해당 연습에서는 paul15 받아서 paga, pseudotime 등 할 예정
+
+8/29 : paul15가 아니라 PBMC68k로 돌릴 예정임. *paul15는 매우 작은 toy dataset
+canonical trajectory analysis를 돌린다
+-> paga -> pseudotime -> scVelo
+
+
+8/30
+1. parameter 대충 다 맞춤
+결론 : 튜닝의 끝은 순정. 마음에 안든다고 parameter 바꾸지 말자. 최소한 뜻은 알고 쓰기
+
+hvg : default (n_top_genes = 2000, min_mean = 0.0125, max_mean = 3,)
+    n_top_genes는 선택하는 HVG의 수. 더 많이 할수록 더 많은 gene을 분석에 넣는거니 figure resolution은 높아지는데,
+    noise가 있을 수 있음.
+
+    0.0125/3 대신 0.1/10 썼다가 틀어짐 : higher expression geneset을 사용하긴 함
+    해당 parameter는 cell별 mean expression을 나타냄. 0.0125 = 100 cell당 1-2 transcript임
+    default는 0.0125-3 범위인데 이걸 0.1-10으로 늘리면 high expression skew인데 **하는 의미가 없음**
+
+pca : default 
+
+neighbors : default (n_neighbors = 15) 
+    KNN의 K임. 숫자가 크다면 더 많은 애들을 neighbor로 여기고 clustering. figure resolution이 떨어짐
+
+umap : (min_dist = 0.3, spread = 1.5)
+    min_dist : point compactness. High value : increased fuzziness, low value : more tighter clustering
+        0.1-0.5 사이에서 함. 0.1, 0.3, 0.5 중 0.3이 plot 형태에 제일 잘 맞아서 0.3으로 결정
+    spread : zoom된 정도. 
+
+leiden : (res = 0.5 / 0.8)
+    res가 높을수록 high resolution
+    default : 1.0. PBMC68k는 일반적으로 8-12개의 cluster로 나눠진다고 함. 큰 그림은 0.5, trajectory할때 쓸거는 0.8
+
+다음 파넬에서는 루프 돌리면서 leiden/paga resolution grid로 볼 예정
+
+2. Tutorial marker geneset은 믿지 말자
+오후 중 일단은 돌렸는데 dotplot 망함. dataset보고 marker gene을 골라야
+
