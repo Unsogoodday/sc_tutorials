@@ -18,5 +18,9 @@ scanpy_practice/data/
 # Keep final figures
 !figures/**
 
-
-
+# Local caches and generated plots
+cache/
+plots/
+figures/
+figures/**
+!figures/final/**
