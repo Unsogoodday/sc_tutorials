@@ -3,12 +3,11 @@
 *.h5ad
 *.h5
 *.loom
-*.mtx
-*.mtx.gz
 *.npz
 *.npy
-scanpy_practice/**/cache/
-scanpy_practice/data/
+**/cache/
+*.pdf
 *.tar
 *.tar.gz
 *.zip
+scanpy_practice/data/
