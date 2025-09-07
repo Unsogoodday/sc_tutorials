@@ -4,6 +4,9 @@
 **/figures/**
 !**/figures/final/**
 
+# Jupyter auto-saves
+.ipynb_checkpoints/
+
 # Ignore most images
 *.png
 *.jpg
