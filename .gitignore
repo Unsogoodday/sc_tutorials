@@ -1,3 +1,15 @@
+# Ignore local caches and generated plots, except the final ones
+**/cache/**
+**/plots/**
+**/figures/**
+!**/figures/final/**
+
+# Ignore most images
+*.png
+*.jpg
+*.pdf
+
+# Ignore other big binaries (global)
 *.h5ad
 *.h5
 *.loom
@@ -10,17 +22,6 @@
 *.zip
 scanpy_practice/data/
 
-# Ignore most images
-*.png
-*.jpg
-*.pdf
 
-# Keep final figures
-!figures/**
 
-# Local caches and generated plots
-cache/
-plots/
-figures/
-figures/**
-!figures/final/**
+
