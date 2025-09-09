@@ -4,7 +4,9 @@ scanpy==1.11.4
 anndata==0.11.4
 scipy==1.15.3
 bbknn==1.6.0
-scikit-misc
 notebook
 matplotlib
 seaborn
+scikit-misc
+leidenalg
+igraph
