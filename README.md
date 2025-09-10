@@ -1,1 +1,19 @@
-My passion to bioinformatics started when I realized that the core treatment of disease is only possible via computational approach. As a medical student immersed in neurology and computer science, single cell RNA sequencing was the perfect introduction to computational biology since 2024, as I joined SNU LIT as a research assistant. Even though I took a leave after 6-month stint to serve in ROK army, my passion didn't fade away. Making the most of my spare time in the barracks, I'm brushing up on my single cell analysis skills while practicing what I didn't reach in the lab. In this repository, I record my practice files, ranging from scanpy and scVI tutorials to metadata project of human seizure brain samples.
+# Bioinformatics Practice Repository
+
+> Medical student (neurology + CS) building reproducible single-cell RNA-seq workflows.
+> Research assistant at SNU Lab of Immune Tolerance (2024). Currently serving in the ROK Army.
+
+My interest in bioinformatics began when I realized that lasting progress in treating disease requires computational approaches as much as clinical ones. As a medical student focused on neurology and computer science, I was introduced to computational biology through single-cell RNA sequencing during my time as a research assistant at SNU’s Lab of Immune Tolerance (LIT) in 2024.
+Although I paused my research after six months to serve in the ROK Army, my motivation has remained. In my spare time, I continue refining my single-cell analysis skills and practicing techniques I could not fully explore in the lab.
+
+## What's inside
+This repository collects my practice work, including:
+- **Scanpy** tutorials (single-cell preprocessing and clustering)
+- **scVI** tutorials (deep generative modeling of scRNA-seq)
+- **Metadata project**: human seizure brain samples
+
+## Roadmap
+- [ ] Trajectory inference of neuronal cell types (PAGA, diffusion maps)
+- [ ] Robust integration of seizure scRNAseq with EEG
+- [ ] Differential expression & annotation notes
+- [ ] Better versioning (tags, CHANGELOG)
