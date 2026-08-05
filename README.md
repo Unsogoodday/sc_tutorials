@@ -10,8 +10,8 @@ Although I paused my research after six months to serve in the ROK Army, my moti
 This repository collects my practice work, including:
 - **Scanpy** tutorials (single-cell preprocessing and clustering)
 - **scVI** tutorials (deep generative modeling of scRNA-seq)
-- **Metadata project**: human seizure brain samples
-
+- **GeoMX** tutorials : Bioconductor GeoMX vignette
+  
 ## Roadmap
 - [ ] Trajectory inference of neuronal cell types (PAGA, diffusion maps)
 - [ ] Robust integration of seizure scRNAseq with EEG
