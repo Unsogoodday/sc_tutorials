@@ -1,0 +1,27 @@
+{
+  "name": "R Development Environment",
+  "image": "ghcr.io/rocker-org/devcontainer/r-ver:4.6",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "REditorSupport.r",
+        "RDebugger.r-debugger"
+      ],
+      "settings": {
+        "r.rterm.linux": "/usr/local/bin/R",
+        "r.bracketedPaste": true,
+        "r.sessionWatcher": true
+      }
+    }
+  },
+
+  "features": {
+    "ghcr.io/rocker-org/devcontainer-features/r-packages:1": {
+      "packages": "languageserver,httpgd,tidyverse",
+      "installSystemRequirements": true
+    }
+  },
+
+  "postCreateCommand": "R --version"
+}
